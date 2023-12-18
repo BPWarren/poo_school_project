@@ -9,6 +9,6 @@ class Pain: public Alimentaire{
         Pain(const Pain &);
         string getType();
         void setType(string new_type);
-
+        void afficher() override;
         Pain& operator=(const Pain&);
 };

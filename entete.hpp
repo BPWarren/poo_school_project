@@ -12,4 +12,5 @@ using namespace std;
 #include "headers/Vestimentaire.hpp"
 #include "headers/Electromenager.hpp"
 #include "headers/Pain.hpp"
+#include "headers/Lait.hpp"
 #endif

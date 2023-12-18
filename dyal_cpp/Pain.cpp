@@ -23,3 +23,7 @@ Pain& Pain::operator=(const Pain& pain){
     this->type = pain.type;
     return *this;
 }
+
+void Pain::afficher(){
+    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"EXP DATE:" <<this->date_expiration<<endl<<"Type : "<<this->type<<endl;
+}

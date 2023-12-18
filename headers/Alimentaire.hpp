@@ -1,5 +1,5 @@
 class Alimentaire : public Article{
-    private:
+    protected:
         Date date_expiration;
     public:
         Alimentaire(string, string, float, Date);
