@@ -40,6 +40,14 @@ float Article::getPrixUnitaire(){
     return this->prixUnitaire;
 }
 
+Article& Article::operator=(const Article &article){
+    this->nom = article.nom;
+    this->marque = article.marque;
+    this->prixUnitaire = article.prixUnitaire;
+
+    return *this;
+}
+
 //Destructeur
 Article::~Article(){
 }

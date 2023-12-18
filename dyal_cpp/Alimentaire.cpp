@@ -19,3 +19,10 @@ Alimentaire::Alimentaire(const Alimentaire &alimentaire):Article(alimentaire){
     this->date_expiration = alimentaire.date_expiration;
     
 }
+
+Alimentaire& Alimentaire::operator=(const Alimentaire & alimentaire){
+    Article::operator=(alimentaire);
+    this->date_expiration = alimentaire.date_expiration;
+
+    return *this;
+}

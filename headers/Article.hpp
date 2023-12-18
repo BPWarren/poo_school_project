@@ -18,6 +18,8 @@ class Article{
         void setPrixUnitaire(float);
         void setMarque(string);
 
+        Article & operator=(const Article &);
+
         virtual void afficher()=0;
 
 };

@@ -11,5 +11,5 @@ using namespace std;
 #include "headers/Alimentaire.hpp"
 #include "headers/Vestimentaire.hpp"
 #include "headers/Electromenager.hpp"
-
+#include "headers/Pain.hpp"
 #endif
