@@ -21,3 +21,10 @@ float Electromenager::getPuissance(){
 void Electromenager::setPuissance(float new_puissance){
     this->puissance = new_puissance;
 }
+
+//Operateur d'affectation
+
+void Electromenager::operator=(const Electromenager& e){
+    Article::operator=(e);
+    this->puissance = e.puissance;
+}
