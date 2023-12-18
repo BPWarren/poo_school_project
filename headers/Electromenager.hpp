@@ -4,11 +4,16 @@ class Electromenager : public Article{
     public:
 
         Electromenager(string, string, float, float);
-        ~Electromenager();
+        
+        //Constructeur de copie
         Electromenager(const Electromenager &);
+
+        //Destructeur
+        ~Electromenager();
         //Accesseurs
         float getPuissance();
         void setPuissance(float new_puissance);
+        
         
 
 };
