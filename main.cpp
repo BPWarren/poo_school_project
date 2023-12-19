@@ -29,15 +29,23 @@ int main(){
 
     Magasin mag;
     mag.add_depot1(p_lait);
+    cout<<mag.getTailleDepot1()<<endl;
     mag.add_depot1(p_pain);
+
+    cout<<mag.getTailleDepot1()<<endl;
+
+    mag.add_depot2(p_tv);
+    mag.add_depot2(p_ref);
+
+    mag.add_depot3(p_chem);
+    mag.add_depot3(p_pant);
+
+
     int taille1 = mag.getTailleDepot1();
     for(int i=0; i<taille1;i++){
         mag.pop_depot1(i);
+        
     }
-    
-
-
-
 
     return 0;
 
