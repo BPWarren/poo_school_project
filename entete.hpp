@@ -13,8 +13,10 @@ using namespace std;
 #include "headers/Electromenager.hpp"
 #include "headers/Pain.hpp"
 #include "headers/Lait.hpp"
+#include "headers/Tv.hpp"
 #include "headers/Pantalon.hpp"
 #include "headers/Chemise.hpp"
+#include "headers/Refrigirateur.hpp"
 #include "headers/Magasin.hpp"
 #include "headers/Client.hpp"
 #endif
