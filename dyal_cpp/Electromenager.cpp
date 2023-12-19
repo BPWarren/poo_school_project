@@ -24,7 +24,8 @@ void Electromenager::setPuissance(float new_puissance){
 
 //Operateur d'affectation
 
-void Electromenager::operator=(const Electromenager& e){
+Electromenager& Electromenager::operator=(const Electromenager& e){
     Article::operator=(e);
     this->puissance = e.puissance;
+    return *this;
 }

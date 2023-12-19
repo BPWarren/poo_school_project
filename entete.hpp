@@ -13,4 +13,6 @@ using namespace std;
 #include "headers/Electromenager.hpp"
 #include "headers/Pain.hpp"
 #include "headers/Lait.hpp"
+#include "headers/Pantalon.hpp"
+#include "headers/Chemise.hpp"
 #endif

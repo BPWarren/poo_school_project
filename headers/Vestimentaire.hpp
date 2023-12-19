@@ -17,6 +17,6 @@ class Vestimentaire : public Article{
         void set_couleur(string);
 
         //Operateur d'affectation
-        void operator=(const Vestimentaire&);
+        Vestimentaire& operator=(const Vestimentaire&);
 
 };
