@@ -23,7 +23,7 @@ Chemise& Chemise::operator=(const Chemise& c){
 }
 
 void Chemise::afficher(){
-    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"MANCHE:" <<this->get_manche()<<endl;
+    cout<<boolalpha<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"MANCHE:" <<this->get_manche()<<endl;
 
 }
 

@@ -8,6 +8,10 @@ int main(){
 
     lait.afficher();
     pain.afficher();
+
+    Chemise chemise("H-RP41" , "FILART", 95.99 , "XL" , "Rouge" , true );
+    chemise.afficher();
+
     return 0;
 
 }
