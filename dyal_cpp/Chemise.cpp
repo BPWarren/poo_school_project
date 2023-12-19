@@ -22,6 +22,14 @@ Chemise& Chemise::operator=(const Chemise& c){
     return *this;
 }
 
+int Chemise::getNombre(){
+    return this->nombre;
+}
+
+void Chemise::setNombre(int new_nb){
+    this->nombre  =new_nb;
+}
+
 void Chemise::afficher(){
     cout<<boolalpha<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"MANCHE:" <<this->get_manche()<<endl;
 

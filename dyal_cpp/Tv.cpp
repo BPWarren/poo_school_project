@@ -17,6 +17,14 @@ float Tv::getTaille(){
     return this->taille;
 }
 
+int Tv::getNombre(){
+    return this->nombre;
+}
+
+void Tv::setNombre(int new_nb){
+    this->nombre  =new_nb;
+}
+
 Tv& Tv::operator=(const Tv &tv){
     Electromenager::operator=(tv);
     this->taille = tv.taille;

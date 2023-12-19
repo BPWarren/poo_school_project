@@ -14,9 +14,19 @@ string Pain::getType(){
     return this->type;
 }
 
+int Pain::getNombre(){
+    return this->nombre;
+}
+
+void Pain::setNombre(int new_nb){
+    this->nombre  =new_nb;
+}
+
 void Pain::setType(string new_type){
     this->type = new_type;
 }
+
+
 
 Pain& Pain::operator=(const Pain& pain){
     Alimentaire::operator=(pain);

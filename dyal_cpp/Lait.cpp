@@ -18,6 +18,14 @@ void Lait::setNaturel(bool new_naturel){
     this->naturel = new_naturel;
 }
 
+int Lait::getNombre(){
+    return this->nombre;
+}
+
+void Lait::setNombre(int new_nb){
+    this->nombre  =new_nb;
+}
+
 Lait& Lait::operator=(const Lait &lait){
     Alimentaire::operator=(lait);
     this->naturel = lait.naturel;

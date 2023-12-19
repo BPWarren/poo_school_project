@@ -14,6 +14,7 @@ Article::Article(const Article &article){
     this->marque = article.marque;
     this->nom = article.nom;
     this->prixUnitaire = article.prixUnitaire;
+    this->nombre_article = 0;
 }
 
 //Accesseurs
@@ -29,6 +30,10 @@ void Article::setMarque(string new_marque){
     this->marque = new_marque;
 }
 
+void Article::setNombreArticle(int new_nb){
+    this->nombre_article = new_nb;
+}
+
 string Article::getMarque(){
     return this->marque;
 }
@@ -38,6 +43,10 @@ string Article::getNom(){
 
 float Article::getPrixUnitaire(){
     return this->prixUnitaire;
+}
+
+int Article::getNombreArticle(){
+    return this->nombre_article;
 }
 
 Article& Article::operator=(const Article &article){

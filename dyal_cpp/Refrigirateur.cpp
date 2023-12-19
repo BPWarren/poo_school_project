@@ -4,7 +4,7 @@ Refrigirateur::Refrigirateur(string nom, string marque, float prixU, float puiss
     this->volume = vol;
 }
 
-Refrigirateur::Refrigirateur(const Refrigirateur &ref):Refrigirateur(ref){
+Refrigirateur::Refrigirateur(const Refrigirateur &ref):Electromenager(ref){
     this->volume = ref.volume;
 }
 
@@ -15,6 +15,14 @@ void Refrigirateur::setVolume(float new_volume){
 
 float Refrigirateur::getVolume(){
     return this->volume;
+}
+
+int Refrigirateur::getNombre(){
+    return this->nombre;
+}
+
+void Refrigirateur::setNombre(int new_nb){
+    this->nombre  =new_nb;
 }
 
 void Refrigirateur::afficher(){

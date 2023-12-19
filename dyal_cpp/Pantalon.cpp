@@ -16,6 +16,14 @@ void Pantalon::set_longueur(float new_longueur){
     this->longueur = new_longueur;
 }
 
+int Pantalon::getNombre(){
+    return this->nombre;
+}
+
+void Pantalon::setNombre(int new_nb){
+    this->nombre  =new_nb;
+}
+
 Pantalon& Pantalon::operator=(const Pantalon& p){
     Vestimentaire::operator=(p);
     this->longueur = p.longueur;

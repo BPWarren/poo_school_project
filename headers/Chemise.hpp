@@ -2,6 +2,7 @@ class Chemise: public Vestimentaire
 {
 private:
     bool manche;
+    int nombre;
 public:
     // Consructeurs
     Chemise(string nom , string marque , float prixUnitaire , string taille, string couleur, bool manche);
@@ -13,6 +14,8 @@ public:
     //Accesseurs
     bool get_manche();
     void set_manche(float);
+    int getNombre();
+    void setNombre(int new_nb);
 
     //Operateur d'affectation
     Chemise& operator=(const Chemise&);
