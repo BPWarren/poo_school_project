@@ -28,4 +28,11 @@ void Vestimentaire::set_taille(string new_taille){
 void Vestimentaire::set_couleur(string new_couleur){
     this->couleur = new_couleur;
 }
+// Operateur d'affectation
+Vestimentaire& Vestimentaire::operator=(const Vestimentaire& v ){
+    Article::operator=(v);
+    this->taille = v.taille;
+    this->couleur = v.couleur;
+    return *this;
+}
 

@@ -18,4 +18,11 @@ float Tv::getTaille(){
 }
 
 Tv& Tv::operator=(const Tv &tv){
+    Electromenager::operator=(tv);
+    this->taille = tv.taille;
+    return *this;
+}
+
+void Tv::afficher(){
+    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"Taille : "<<this->taille<<endl;
 }

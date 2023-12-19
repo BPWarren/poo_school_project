@@ -10,9 +10,13 @@ class Electromenager : public Article{
 
         //Destructeur
         ~Electromenager();
+
         //Accesseurs
         float getPuissance();
         void setPuissance(float new_puissance);
+
+        //Operateur d'affectation
+        Electromenager& operator=(const Electromenager&);
         
         
 

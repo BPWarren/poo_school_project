@@ -11,6 +11,4 @@ class Tv : public Electromenager{
         void afficher() override;
 
         Tv& operator=(const Tv &);
-
-
 };
