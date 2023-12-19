@@ -12,6 +12,9 @@ int main(){
     Chemise chemise("H-RP41" , "FILART", 95.99 , "XL" , "Rouge" , true );
     chemise.afficher();
 
+    Pantalon pant("H-RP42" , "Jean" , 80.00 , "M", "Noir" , 30 );
+    pant.afficher();
+
     return 0;
 
 }

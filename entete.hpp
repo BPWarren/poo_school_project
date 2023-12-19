@@ -15,4 +15,6 @@ using namespace std;
 #include "headers/Lait.hpp"
 #include "headers/Pantalon.hpp"
 #include "headers/Chemise.hpp"
+#include "headers/Magasin.hpp"
+#include "headers/Client.hpp"
 #endif
