@@ -39,3 +39,11 @@ Tv& Tv::operator=(const Tv &tv){
 void Tv::afficher(){
     cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"Taille : "<<this->taille<<endl;
 }
+
+void Tv::remplir(){
+    Electromenager::remplir();
+    cout<<endl<<"Taille : ";
+    cin>>this->taille;
+    cout<<"Quantite : ";
+    cin>>this->nombre;
+}

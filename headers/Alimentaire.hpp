@@ -6,7 +6,7 @@ class Alimentaire : public Article{
         Alimentaire();
         ~Alimentaire();
         Alimentaire(const Alimentaire &);
-        
+        void remplir() override;
         Date getDateExpiration();
         void setDateExpiration(Date new_date);
         Alimentaire & operator=(const Alimentaire &);

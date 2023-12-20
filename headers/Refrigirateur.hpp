@@ -15,5 +15,6 @@ class Refrigirateur : public Electromenager{
         void setNombre(int new_nb);
 
         void afficher() override;
+        void remplir() override;
         Refrigirateur& operator=(const Refrigirateur &);
 };

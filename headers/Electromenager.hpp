@@ -15,7 +15,7 @@ class Electromenager : public Article{
         //Accesseurs
         float getPuissance();
         void setPuissance(float new_puissance);
-
+        void remplir() override;
         //Operateur d'affectation
         Electromenager& operator=(const Electromenager&);
         

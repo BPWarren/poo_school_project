@@ -11,6 +11,7 @@ class Tv : public Electromenager{
         void setTaille(float new_taille);
         float getTaille();
         void afficher() override;
+        void remplir() override;
         int getNombre();
         void setNombre(int new_nb);
         Tv& operator=(const Tv &);

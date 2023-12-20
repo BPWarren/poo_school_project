@@ -32,3 +32,9 @@ Electromenager& Electromenager::operator=(const Electromenager& e){
     this->puissance = e.puissance;
     return *this;
 }
+
+void Electromenager::remplir(){
+    Article::remplir();
+    cout<<endl<<"Puissance : ";
+    cin>>this->puissance;
+}
