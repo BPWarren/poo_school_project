@@ -52,12 +52,12 @@ int main(){
     Pain *new_pain;
     new_pain = new Pain();
     new_pain->remplir();
-    //magasin.add_depot1(new_pain);
+    magasin.add_depot1(new_pain);
 
     new_pain->afficher();
 
     
-    */
+   
     
 
   
@@ -67,14 +67,30 @@ int main(){
     
     Magasin magasin;
     Gerant gerant("ABODJI", "Kondi",date);
-
-    
-    
-
+    for(int i=0; i<4; i++){
+        gerant.ajouter_article(magasin);
+    }
+     Magasin magasin;
     Pain *new_pain;
     new_pain = new Pain();
     new_pain->remplir();
     magasin.add_depot1(new_pain);
+    cout<<magasin.getTailleDepot1();
+    new_pain->afficher();
+    
+ */
+
+    
+
+    
+
+    Magasin magasin;
+    Gerant gerant("ABODJI", "Kondi",date);
+
+    gerant.ajouter_article(magasin);
+   
+
+
     /*
     cout<<magasin.getTailleDepot1()<<endl;
     int taille1 = magasin.getTailleDepot1();

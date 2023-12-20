@@ -11,13 +11,16 @@ Magasin::Magasin(){
 }
 
 Magasin::Magasin(const Magasin& magasin){
+    /*
     delete[] this->depot1_alimentaire;
     delete[] this->depot2_electromenager;
     delete[] this->depot3_vestimentaire;
-
+    */
     this->depot1_alimentaire = new Alimentaire*[magasin.taille_depot1];
     this->depot2_electromenager = new Electromenager*[magasin.taille_depot2];
     this->depot3_vestimentaire = new Vestimentaire*[magasin.taille_depot3];
+
+    
     
 
     this->taille_depot1 = magasin.taille_depot1;
@@ -38,9 +41,9 @@ Magasin::Magasin(const Magasin& magasin){
 }
 
 Magasin::~Magasin(){
-    delete[] this->depot1_alimentaire;
-    delete[] this->depot2_electromenager;
-    delete[] this->depot3_vestimentaire;
+    delete[] (this->depot1_alimentaire);
+    delete[] (this->depot2_electromenager);
+    delete[] (this->depot3_vestimentaire);
 };
 
 int Magasin::getTailleDepot1(){
