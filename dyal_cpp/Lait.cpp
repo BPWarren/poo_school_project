@@ -47,3 +47,11 @@ void Lait::afficher(){
     }
 
 }
+
+void Lait::remplir(){
+    Alimentaire::remplir();
+    cout<<endl<<"Naturel(0/1) : ";
+    cin>>this->naturel;
+    cout<<"Quantite : ";
+    cin>>this->nombre;
+}
