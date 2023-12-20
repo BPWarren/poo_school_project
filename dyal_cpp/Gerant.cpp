@@ -83,32 +83,38 @@ void Gerant::ajouter_article(Magasin magasin){
     {
     case 1:
         Pain *new_pain;
+        new_pain = new Pain();
         new_pain->remplir();
-        add_depot1(new_pain, magasin);
+        magasin.add_depot1(new_pain);
         break;
     case 2:
         Lait *new_lait;
+        new_lait = new Lait();
         new_lait->remplir();
-        add_depot1(new_lait, magasin);
+        magasin.add_depot1(new_lait);
     case 3:
         Chemise *new_chemise;
+        new_chemise = new Chemise();
         new_chemise->remplir();
-        add_depot3(new_chemise, magasin);
+        magasin.add_depot3(new_chemise);
         break;
     case 4:
         Pantalon *new_pant;
+        new_pant = new Pantalon();
         new_pant->remplir();
-        add_depot3(new_pant, magasin);
+        magasin.add_depot3(new_pant);
         break;
     case 5:
         Tv *new_tv;
+        new_tv = new Tv;
         new_tv->remplir();
-        add_depot2(new_tv, magasin);
+        magasin.add_depot2(new_tv);
         break;
     case 6:
         Refrigirateur *ref;
+        ref = new Refrigirateur();
         ref->remplir();
-        add_depot2(ref, magasin);
+        magasin.add_depot2(ref);
         break;
     
     default:
@@ -125,7 +131,7 @@ void Gerant::afficher_depot(Article **article, int taille){
 */
 void Gerant::category_indexation(int index, Magasin magasin){
 
-     switch (index)
+    switch (index)
     {
     //Article **article;
     case 1:

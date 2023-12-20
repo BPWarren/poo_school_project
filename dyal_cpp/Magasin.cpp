@@ -72,8 +72,9 @@ void Magasin::add_depot3(Vestimentaire *vest){
 
 //Pour supprimer, on décale juste le contenu puis on déc taille_depot
 void Magasin::pop_depot1(int index){
-    Alimentaire *temp = this->depot1_alimentaire[index];
-    temp->afficher();
+
+    //Alimentaire *temp = this->depot1_alimentaire[index];
+    //temp->afficher();
 
     for(int i=index; i<this->taille_depot1-1;i++){
         *(this->depot1_alimentaire)[i] = *(this->depot1_alimentaire)[i+1];
@@ -81,7 +82,6 @@ void Magasin::pop_depot1(int index){
 
     this->taille_depot1--;
 }
-
 
 
 void Magasin::pop_depot2(int index){
