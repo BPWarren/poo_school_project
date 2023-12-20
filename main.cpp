@@ -62,34 +62,19 @@ int main(){
 
   
    
-    Tv tv("FHJ", "HP", 300, 34, 30);
-    Refrigirateur ref("GHJ", "DELL", 200, 45, 78);
+   /* Tv tv("FHJ", "HP", 300, 34, 30);
+    Refrigirateur ref("GHJ", "DELL", 200, 45, 78);*/
     
-    Magasin magasin;
-    Gerant gerant("ABODJI", "Kondi",date);
-    for(int i=0; i<4; i++){
-        gerant.ajouter_article(magasin);
-    }
-     Magasin magasin;
-    Pain *new_pain;
-    new_pain = new Pain();
-    new_pain->remplir();
-    magasin.add_depot1(new_pain);
-    cout<<magasin.getTailleDepot1();
-    new_pain->afficher();
-    
- */
-
-    
-
-    
-
     Magasin magasin;
     Gerant gerant("ABODJI", "Kondi",date);
 
     gerant.ajouter_article(magasin);
-   
+    
 
+   /* Pain *new_pain;
+    new_pain = new Pain();
+    new_pain->remplir();
+    magasin.add_depot1(new_pain);*/
 
     /*
     cout<<magasin.getTailleDepot1()<<endl;
