@@ -15,6 +15,7 @@ Magasin::Magasin(const Magasin& magasin){
     //delete[] this->depot1_alimentaire;
     //delete[] this->depot2_electromenager;
     //delete[] this->depot3_vestimentaire;
+    
     this->depot1_alimentaire = new Alimentaire*[magasin.taille_depot1];
     this->depot2_electromenager = new Electromenager*[magasin.taille_depot2];
     this->depot3_vestimentaire = new Vestimentaire*[magasin.taille_depot3];
@@ -27,14 +28,17 @@ Magasin::Magasin(const Magasin& magasin){
     this->taille_depot3 = magasin.taille_depot3;
 
     for(int i=0;i<this->taille_depot1;i++){
+        this->depot1_alimentaire [i] = new Pain ();
         *((this->depot1_alimentaire)[i]) = *((magasin.depot1_alimentaire)[i]);
     }
 
     for(int i=0;i<this->taille_depot2;i++){
+        this->depot2_electromenager [i] = new Tv ();
         *((this->depot2_electromenager)[i]) = *((magasin.depot2_electromenager)[i]);
     }
 
     for(int i=0;i<this->taille_depot3;i++){
+        this->depot3_vestimentaire [i] = new Chemise ();
         *((this->depot3_vestimentaire)[i]) =*((magasin.depot3_vestimentaire)[i]);
     }
 }
@@ -59,7 +63,7 @@ int Magasin::getTailleDepot3(){
 
 void Magasin::add_depot1(Alimentaire *aliment){
     *(this->depot1_alimentaire + this->taille_depot1) = aliment;
-    this->taille_depot1++;
+    (this->taille_depot1)++;
 }
 
 void Magasin::add_depot2(Electromenager *elect){
@@ -108,4 +112,37 @@ void Magasin::pop_depot3(int index){
     this->taille_depot3--;
 }
 
+Magasin& Magasin::operator=(const Magasin &magasin){
+     // Libérer la mémoire existante
+
+    delete[] this->depot1_alimentaire;
+    delete[] this->depot2_electromenager;
+    delete[] this->depot3_vestimentaire;
+
+    // Allouer de la mémoire pour les nouveaux tableaux
+    this->depot1_alimentaire = new Alimentaire*[magasin.taille_depot1];
+    this->depot2_electromenager = new Electromenager*[magasin.taille_depot2];
+    this->depot3_vestimentaire = new Vestimentaire*[magasin.taille_depot3];
+
+    this->taille_depot1 = magasin.taille_depot1;
+    this->taille_depot2 = magasin.taille_depot2;
+    this->taille_depot3 = magasin.taille_depot3;
+
+    for(int i=0;i<this->taille_depot1;i++){
+        this->depot1_alimentaire [i] = new Pain ();
+        *((this->depot1_alimentaire)[i]) = *((magasin.depot1_alimentaire)[i]);
+    }
+
+    for(int i=0;i<this->taille_depot2;i++){
+        this->depot2_electromenager [i] = new Tv ();
+        *((this->depot2_electromenager)[i]) = *((magasin.depot2_electromenager)[i]);
+    }
+
+    for(int i=0;i<this->taille_depot3;i++){
+        this->depot3_vestimentaire [i] = new Chemise ();
+        *((this->depot3_vestimentaire)[i]) =*((magasin.depot3_vestimentaire)[i]);
+    }
+
+    return *this;
+}
     

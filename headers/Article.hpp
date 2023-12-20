@@ -23,6 +23,7 @@ class Article{
         //void setNombreArticle(int new_nb);
 
         Article & operator=(const Article &);
+        void afficher_short();
         
         //Operateur de comparaison
 

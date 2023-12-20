@@ -49,7 +49,5 @@ void Pain::remplir(){
     cin>>this->nombre;
     cout<<endl<<"Type : ";
     cin>>this->type;
-
-    cout<<"erreur";
 }
 

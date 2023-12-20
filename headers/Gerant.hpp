@@ -22,17 +22,17 @@ class Gerant:public Person{
         //Methode sup
 
         /*
-        -Ajouter un nouvel article
-        -Afficher la liste des articles par categorie
+        -Ajouter un nouvel article OUI
+        -Afficher la liste des articles par categorie 
         -Afficher ts les article du depot
-        -supprimer un article
+        -supprimer un article 
         -quitter le prog
         
         */
        //void afficher_depot(Article *article, int taille);
        void category_indexation(int index, Magasin);
 
-       void ajouter_article(Magasin magasin);
+       void ajouter_article(Magasin &magasin);
        void afficher_category(Magasin);
        void afficher_tout(Magasin);
        void supprimer_article(int index, Magasin magasin);

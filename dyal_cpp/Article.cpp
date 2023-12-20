@@ -71,6 +71,14 @@ bool Article::operator==(const Article & a){
     return this->nom==a.nom && this->marque==a.marque;
 }
 
+void Article::afficher_short(){
+    cout<<endl<<"===================";
+    cout<<endl<<"Nom :";
+    cout<<this->nom;
+    cout<<endl<<"PrixU";
+    cout<<endl<<this->prixUnitaire;
+}
+
 
 //Destructeur
 Article::~Article(){}

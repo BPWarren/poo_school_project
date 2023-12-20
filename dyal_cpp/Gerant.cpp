@@ -68,7 +68,7 @@ void Gerant::pop_depot3(int index, Magasin magasin){
 }
 
 
-void Gerant::ajouter_article(Magasin magasin){
+void Gerant::ajouter_article(Magasin &magasin){
     int choix=0;
     cout<<"[1] Pain"<<endl;
     cout<<"[2] Lait"<<endl;
@@ -86,9 +86,8 @@ void Gerant::ajouter_article(Magasin magasin){
         new_pain = new Pain();
         new_pain->afficher();
         new_pain->remplir();
-        cout<<"end";
         magasin.add_depot1(new_pain);
-        //cout<<"end";
+        cout<<magasin.getTailleDepot1();
         break;
     case 2:
         Lait *new_lait;
@@ -175,6 +174,10 @@ void Gerant::afficher_category(Magasin magasin){
 
     category_indexation(index, magasin);
    
+}
+
+void Gerant::supprimer_article(int index, Magasin magasin){
+
 }
 void Gerant::afficher_tout(Magasin magasin){
     category_indexation(1, magasin);
