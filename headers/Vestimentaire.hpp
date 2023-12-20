@@ -5,6 +5,7 @@ class Vestimentaire : public Article{
     
     public:
         // Constructeurs
+        Vestimentaire();
         Vestimentaire(string nom , string marque , float prixUnitaire , string taille, string couleur);
         Vestimentaire(const Vestimentaire& );// Constructeur de copie
 

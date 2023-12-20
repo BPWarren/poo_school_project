@@ -1,6 +1,11 @@
 #include "../entete.hpp"
 
 // Constructeurs
+Vestimentaire::Vestimentaire(){
+    this->taille = "NONE";
+    this->couleur = "NONE";
+}
+
 Vestimentaire::Vestimentaire(string nom , string marque , float prixUnitaire , string taille, string couleur):Article::Article(nom , marque, prixUnitaire){
     this->taille = taille;
     this->couleur = couleur;

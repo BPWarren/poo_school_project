@@ -1,11 +1,18 @@
 #include "../entete.hpp"
 
-Chemise::Chemise(string nom , string marque , float prixUnitaire , string taille, string couleur, bool manche):Vestimentaire::Vestimentaire(nom , marque , prixUnitaire, taille , couleur){
+Chemise::Chemise(){
+    this->manche = false;
+    this->nombre = 0;
+}
+
+Chemise::Chemise(string nom , string marque , float prixUnitaire , string taille, string couleur, bool manche ,int nombre):Vestimentaire::Vestimentaire(nom , marque , prixUnitaire, taille , couleur){
     this->manche = manche;
+    this->nombre = nombre;
 }
 
 Chemise::Chemise(const Chemise& c):Vestimentaire::Vestimentaire(c){
     this->manche = c.manche;
+    this->nombre = c.nombre;
 }
 
 bool Chemise::get_manche(){

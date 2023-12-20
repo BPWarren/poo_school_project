@@ -1,5 +1,9 @@
 #include "../entete.hpp"
 
+Pantalon::Pantalon(){
+    this->longueur = 0;
+    this->nombre = 0;
+}
 Pantalon::Pantalon(string nom , string marque , float prixUnitaire , string taille, string couleur, float longueur):Vestimentaire::Vestimentaire(nom , marque , prixUnitaire, taille , couleur){
     this->longueur = longueur;
 }

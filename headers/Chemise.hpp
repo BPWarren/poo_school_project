@@ -5,7 +5,8 @@ private:
     int nombre;
 public:
     // Consructeurs
-    Chemise(string nom , string marque , float prixUnitaire , string taille, string couleur, bool manche);
+    Chemise();
+    Chemise(string nom , string marque , float prixUnitaire , string taille, string couleur, bool manche , int nombre);
     Chemise(const Chemise&);
 
     //Destructeur
