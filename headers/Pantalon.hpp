@@ -5,6 +5,7 @@ private:
     int nombre;
 public:
     // Consructeurs
+    Pantalon();
     Pantalon(string nom , string marque , float prixUnitaire , string taille, string couleur, float longueur);
     Pantalon(const Pantalon&);
 
