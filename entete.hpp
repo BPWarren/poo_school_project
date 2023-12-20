@@ -18,7 +18,7 @@ using namespace std;
 #include "headers/Chemise.hpp"
 #include "headers/Refrigirateur.hpp"
 #include "headers/Magasin.hpp"
-#include "headers/Client.hpp"
 #include "headers/Person.hpp"
+#include "headers/Client.hpp"
 #include "headers/Gerant.hpp"
 #endif
