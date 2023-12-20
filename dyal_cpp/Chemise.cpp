@@ -49,6 +49,7 @@ void Chemise::remplir(){
     cout<<endl<<"Quantité: ";
     cin>>this->nombre;
 }
+
 Chemise::~Chemise(){
 
 }

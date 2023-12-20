@@ -67,6 +67,11 @@ Article& Article::operator=(const Article &article){
     return *this;
 }
 
+bool Article::operator==(const Article & a){
+    return this->nom==a.nom && this->marque==a.marque;
+}
+
+
 //Destructeur
 Article::~Article(){}
 
