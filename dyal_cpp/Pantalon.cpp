@@ -39,6 +39,14 @@ void Pantalon::afficher(){
 
 }
 
+void Pantalon::remplir(){
+    Article::remplir();
+    cout<<endl<<"Longueur: ";
+    cin>>this->longueur;
+    cout<<endl<<"Quantité: ";
+    cin>>this->nombre;
+}
+
 Pantalon::~Pantalon(){
 
 }
