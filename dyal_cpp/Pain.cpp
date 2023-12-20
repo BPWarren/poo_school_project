@@ -41,14 +41,18 @@ void Pain::afficher(){
 
 void Pain::remplir(){
     cout<<"=============NOUVEL ARTICLE=============="<<endl;
+    Article::remplir();
+    /*
     cout<<endl<<"NOM : ";
     cin>>this->nom;
     cout<<endl<<"MARQUE : ";
     cin>>this->marque;
     cout<<endl<<"PrixU : ";
+    
+    cin>>this->nombre;
+    */
     cin>>this->prixUnitaire;
     cout<<"QUANTITE : ";
-    cin>>this->nombre;
     cout<<endl<<"Type : ";
     cin>>this->type;
 }

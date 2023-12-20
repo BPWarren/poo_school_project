@@ -29,7 +29,7 @@ class Gerant:public Person{
         -quitter le prog
         
         */
-       void afficher_depot(Article *article, int taille);
+       //void afficher_depot(Article *article, int taille);
        void category_indexation(int index, Magasin);
 
        void ajouter_article(Magasin magasin);

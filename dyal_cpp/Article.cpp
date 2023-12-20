@@ -9,6 +9,12 @@ Article::Article(string nom, string marque, float prixUnitaire){
     this->prixUnitaire = prixUnitaire;
 }
 
+Article::Article(){
+    this->nom = "article";
+    this->marque = "marque";
+    this->prixUnitaire=0;
+}
+
 //Constructeur de copie
 Article::Article(const Article &article){
     this->marque = article.marque;

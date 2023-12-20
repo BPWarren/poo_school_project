@@ -3,6 +3,11 @@ Alimentaire::Alimentaire(string nom, string marque, float prixUnitaire, Date dat
     this->date_expiration = date_expiration;
 }
 
+Alimentaire::Alimentaire():Article(){
+    Date date;
+    this->date_expiration=date;
+}
+
 Alimentaire::~Alimentaire(){
 
 }

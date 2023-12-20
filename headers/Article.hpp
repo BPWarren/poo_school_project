@@ -7,6 +7,7 @@ class Article{
     public:
         //méthode virtuel
         Article(string, string, float);
+        Article();
         ~Article();
         Article(const Article &);
 

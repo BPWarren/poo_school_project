@@ -3,8 +3,10 @@
 int main(){
 
     Date date(12,12,2003);
+    
+    /*
     Lait lait("PEAK","DJAOUDA",12.5,date,1 );
-    Pain pain("Hobs","DUPIN",1.00,date,"Soja");
+    
 
     //lait.afficher();
     //pain.afficher();
@@ -19,7 +21,7 @@ int main(){
     Refrigirateur ref("GHJ", "DELL", 200, 45, 78);
 
     Lait *p_lait = &lait;
-    Pain *p_pain = &pain;
+    
 
     Chemise *p_chem = &chemise;
     Pantalon *p_pant = &pant;
@@ -27,26 +29,41 @@ int main(){
     Tv *p_tv = &tv;
     Refrigirateur *p_ref = &ref;
 
+    gerant.add_depot1(p_pain, mag);
+
+    cout<<mag.getTailleDepot1()<<endl;
+
+    gerant.add_depot2(p_tv, mag);
+    gerant.add_depot2(p_ref, mag);
+
+    gerant.add_depot3(p_chem, mag);
+    gerant.add_depot3(p_pant, mag);
+
+    */
+    //Lait *p_lait;
+    Pain pain("Hobs","DUPIN",1.00,date,"Soja");
+    Pain *p_pain = &pain;
+    //Pain *p_pain;
+    p_pain->remplir();
+
+    p_pain->afficher();
+
+  
+    
+    /*
     Magasin mag;
-    mag.add_depot1(p_lait);
+    Gerant gerant("ABODJI", "Kondi",date);
+
+    gerant.ajouter_article(mag);
     cout<<mag.getTailleDepot1()<<endl;
-    mag.add_depot1(p_pain);
-
-    cout<<mag.getTailleDepot1()<<endl;
-
-    mag.add_depot2(p_tv);
-    mag.add_depot2(p_ref);
-
-    mag.add_depot3(p_chem);
-    mag.add_depot3(p_pant);
-
-
     int taille1 = mag.getTailleDepot1();
     for(int i=0; i<taille1;i++){
-        mag.pop_depot1(i);
+        gerant.pop_depot1(i, mag);
         
     }
-
+    */
+    
+    
     return 0;
 
 }

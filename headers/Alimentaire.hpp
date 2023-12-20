@@ -3,6 +3,7 @@ class Alimentaire : public Article{
         Date date_expiration;
     public:
         Alimentaire(string, string, float, Date);
+        Alimentaire();
         ~Alimentaire();
         Alimentaire(const Alimentaire &);
         
