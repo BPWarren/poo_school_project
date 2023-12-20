@@ -92,6 +92,7 @@ void Gerant::ajouter_article(Magasin magasin){
         new_lait = new Lait();
         new_lait->remplir();
         magasin.add_depot1(new_lait);
+        break;
     case 3:
         Chemise *new_chemise;
         new_chemise = new Chemise();
