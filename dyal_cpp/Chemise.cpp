@@ -43,7 +43,7 @@ void Chemise::afficher(){
 }
 
 void Chemise::remplir(){
-    Article::remplir();
+    Vestimentaire::remplir();
     cout<<endl<<"Manche: ";
     cin>>this->manche;
     cout<<endl<<"Quantité: ";

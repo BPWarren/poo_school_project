@@ -40,7 +40,7 @@ void Pantalon::afficher(){
 }
 
 void Pantalon::remplir(){
-    Article::remplir();
+    Vestimentaire::remplir();
     cout<<endl<<"Longueur: ";
     cin>>this->longueur;
     cout<<endl<<"Quantité: ";
