@@ -23,6 +23,8 @@ public:
     // Fonction d'affichage
     void afficher() override;
 
+    void remplir() override;
+
 
 };
 

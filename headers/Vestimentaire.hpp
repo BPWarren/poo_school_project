@@ -20,4 +20,6 @@ class Vestimentaire : public Article{
         //Operateur d'affectation
         Vestimentaire& operator=(const Vestimentaire&);
 
+        void remplir() override;
+
 };
