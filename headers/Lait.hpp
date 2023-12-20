@@ -4,6 +4,7 @@ class Lait : public Alimentaire{
         int nombre;
     public :
         Lait(string nom, string marque,float prixUnitaire, Date date_exp, bool naturel);
+        Lait();
         ~Lait();
         Lait(const Lait &);
 
@@ -12,5 +13,6 @@ class Lait : public Alimentaire{
         int getNombre();
         void setNombre(int new_nb);
         void afficher() override;
+        void remplir() override;
         Lait & operator=(const Lait&);
 };

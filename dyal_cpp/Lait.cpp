@@ -5,6 +5,11 @@ Lait::Lait(string nom, string marque, float prixU, Date date_exp, bool naturel):
     
 }
 
+Lait::Lait():Alimentaire(){
+    this->nombre = 0;
+    this->naturel=0;
+}
+
 Lait::~Lait(){};
 Lait::Lait(const Lait &lait):Alimentaire(lait){
     this->naturel = lait.naturel;
@@ -40,4 +45,5 @@ void Lait::afficher(){
     else{
         cout<<"Non"<<endl;
     }
+
 }
