@@ -3,6 +3,9 @@ Electromenager::Electromenager(string nom, string marque, float prixUnitaire, fl
     this->puissance = puissance;
 }
 
+Electromenager::Electromenager():Article(){
+    this->puissance = 0;
+}
 // Constructeur de copie
 Electromenager::Electromenager(const Electromenager & e): Article::Article(e){
     this->puissance = e.puissance;

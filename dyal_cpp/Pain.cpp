@@ -8,6 +8,10 @@ Pain::Pain(const Pain &pain):Alimentaire(pain){
     this->type = pain.type;
 }
 
+Pain::Pain():Alimentaire(){
+    this->type = "Fromage";
+    this->nombre=0;
+}
 
 Pain::~Pain(){};
 

@@ -4,6 +4,11 @@ Tv::Tv(string nom, string marque, float prixU, float puiss, float taille):Electr
     this->taille = taille;
 }
 
+Tv::Tv(){
+    this->taille=0;
+    this->nombre=0;
+}
+
 Tv::Tv(const Tv &tv):Electromenager(tv){
     this->taille = taille;
 }

@@ -4,6 +4,7 @@ class Electromenager : public Article{
     public:
 
         Electromenager(string, string, float, float);
+        Electromenager();
         
         //Constructeur de copie
         Electromenager(const Electromenager &);

@@ -5,6 +5,7 @@ class Refrigirateur : public Electromenager{
     public:
         Refrigirateur(string nom, string marque, float prixU, float puiss, float volume);
         Refrigirateur(const Refrigirateur &);
+        Refrigirateur();
         ~Refrigirateur();
 
         //Accesseurs

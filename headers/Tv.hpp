@@ -4,6 +4,7 @@ class Tv : public Electromenager{
         int nombre;
     public:
         Tv(string nom, string marque, float prixU, float puiss, float taille);
+        Tv();
         Tv(const Tv &);
         ~Tv();
 
