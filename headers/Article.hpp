@@ -23,6 +23,10 @@ class Article{
         //void setNombreArticle(int new_nb);
 
         Article & operator=(const Article &);
+        
+        //Operateur de comparaison
+
+        bool operator==(const Article& a);
 
         virtual void afficher()=0;
         virtual void remplir();
