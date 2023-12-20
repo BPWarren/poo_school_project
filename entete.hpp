@@ -20,4 +20,5 @@ using namespace std;
 #include "headers/Magasin.hpp"
 #include "headers/Client.hpp"
 #include "headers/Person.hpp"
+#include "headers/Gerant.hpp"
 #endif

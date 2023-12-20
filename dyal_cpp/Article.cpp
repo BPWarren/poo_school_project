@@ -14,7 +14,7 @@ Article::Article(const Article &article){
     this->marque = article.marque;
     this->nom = article.nom;
     this->prixUnitaire = article.prixUnitaire;
-    this->nombre_article = 0;
+    //this->nombre_article = 0;
 }
 
 //Accesseurs
@@ -29,10 +29,16 @@ void Article::setPrixUnitaire(float new_prixU){
 void Article::setMarque(string new_marque){
     this->marque = new_marque;
 }
-
+/*
 void Article::setNombreArticle(int new_nb){
     this->nombre_article = new_nb;
 }
+
+int Article::getNombreArticle(){
+    return this->nombre_article;
+}
+*/
+
 
 string Article::getMarque(){
     return this->marque;
@@ -45,9 +51,7 @@ float Article::getPrixUnitaire(){
     return this->prixUnitaire;
 }
 
-int Article::getNombreArticle(){
-    return this->nombre_article;
-}
+
 
 Article& Article::operator=(const Article &article){
     this->nom = article.nom;
@@ -58,5 +62,15 @@ Article& Article::operator=(const Article &article){
 }
 
 //Destructeur
-Article::~Article(){
+Article::~Article(){}
+
+void Article::remplir(){
+    cout<<"=============NOUVEL ARTICLE=============="<<endl;
+    cout<<endl<<"NOM : ";
+    cin>>this->nom;
+    cout<<endl<<"MARQUE : ";
+    cin>>this->marque;
+    cout<<endl<<"PrixU : ";
+    cin>>this->prixUnitaire;
+
 }

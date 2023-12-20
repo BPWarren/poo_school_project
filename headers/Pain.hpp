@@ -4,6 +4,7 @@ class Pain: public Alimentaire{
         int nombre;
     public:
         Pain(string nom, string marque,float prixUnitaire, Date date_exp, string type);
+        
 
         ~Pain();
         //constructeur de copie
@@ -14,5 +15,6 @@ class Pain: public Alimentaire{
         void setType(string new_type);
         
         void afficher() override;
+        void remplir() override;
         Pain& operator=(const Pain&);
 };

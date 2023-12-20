@@ -42,7 +42,7 @@ Magasin::~Magasin(){
     delete[] this->depot2_electromenager;
     delete[] this->depot3_vestimentaire;
 };
-
+/*
 void Magasin::add_depot1(Alimentaire *aliment){
     *(this->depot1_alimentaire + this->taille_depot1) = aliment;
     this->taille_depot1++;
@@ -70,6 +70,8 @@ void Magasin::pop_depot1(int index){
     this->taille_depot1--;
 }
 
+
+
 void Magasin::pop_depot2(int index){
 
     //Electromenager *temp = this->depot2_electromenager[index];
@@ -91,6 +93,8 @@ void Magasin::pop_depot3(int index){
     }
     this->taille_depot3--;
 }
+
+*/
 
 int Magasin::getTailleDepot1(){
     return this->taille_depot1;

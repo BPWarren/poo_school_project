@@ -8,6 +8,7 @@ Pain::Pain(const Pain &pain):Alimentaire(pain){
     this->type = pain.type;
 }
 
+
 Pain::~Pain(){};
 
 string Pain::getType(){
@@ -37,3 +38,18 @@ Pain& Pain::operator=(const Pain& pain){
 void Pain::afficher(){
     cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"EXP DATE:" <<this->date_expiration<<endl<<"Type : "<<this->type<<endl;
 }
+
+void Pain::remplir(){
+    cout<<"=============NOUVEL ARTICLE=============="<<endl;
+    cout<<endl<<"NOM : ";
+    cin>>this->nom;
+    cout<<endl<<"MARQUE : ";
+    cin>>this->marque;
+    cout<<endl<<"PrixU : ";
+    cin>>this->prixUnitaire;
+    cout<<"QUANTITE : ";
+    cin>>this->nombre;
+    cout<<endl<<"Type : ";
+    cin>>this->type;
+}
+
