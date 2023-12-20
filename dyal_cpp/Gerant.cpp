@@ -69,7 +69,7 @@ void Gerant::pop_depot3(int index, Magasin magasin){
 
 
 void Gerant::ajouter_article(Magasin magasin){
-    int choix(0);
+    int choix=0;
     cout<<"[1] Pain"<<endl;
     cout<<"[2] Lait"<<endl;
     cout<<"[3] Chemise"<<endl;
@@ -106,7 +106,7 @@ void Gerant::ajouter_article(Magasin magasin){
         break;
     case 5:
         Tv *new_tv;
-        new_tv = new Tv;
+        new_tv = new Tv();
         new_tv->remplir();
         magasin.add_depot2(new_tv);
         break;

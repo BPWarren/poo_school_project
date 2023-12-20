@@ -17,8 +17,7 @@ int main(){
     Pantalon pant("H-RP42" , "Jean" , 80.00 , "M", "Noir" , 30 );
     //pant.afficher();
 
-    Tv tv("FHJ", "HP", 300, 34, 30);
-    Refrigirateur ref("GHJ", "DELL", 200, 45, 78);
+    
 
     Lait *p_lait = &lait;
     
@@ -39,7 +38,6 @@ int main(){
     gerant.add_depot3(p_chem, mag);
     gerant.add_depot3(p_pant, mag);
 
-    */
     //Lait *p_lait;
     Pain pain("Hobs","DUPIN",1.00,date,"Soja");
     Pain *p_pain = &pain;
@@ -48,20 +46,45 @@ int main(){
 
     p_pain->afficher();
 
-  
+
+
+
+    Pain *new_pain;
+    new_pain = new Pain();
+    new_pain->remplir();
+    //magasin.add_depot1(new_pain);
+
+    new_pain->afficher();
+
     
-    /*
-    Magasin mag;
+    */
+    
+
+  
+   
+    Tv tv("FHJ", "HP", 300, 34, 30);
+    Refrigirateur ref("GHJ", "DELL", 200, 45, 78);
+    
+    Magasin magasin;
     Gerant gerant("ABODJI", "Kondi",date);
 
-    gerant.ajouter_article(mag);
-    cout<<mag.getTailleDepot1()<<endl;
-    int taille1 = mag.getTailleDepot1();
-    for(int i=0; i<taille1;i++){
-        gerant.pop_depot1(i, mag);
-        
-    }
+    
+    
+
+    Pain *new_pain;
+    new_pain = new Pain();
+    new_pain->remplir();
+    magasin.add_depot1(new_pain);
+    /*
+    cout<<magasin.getTailleDepot1()<<endl;
+    int taille1 = magasin.getTailleDepot1();
+    cout<<endl<<taille1;
+    bool l = tv==ref;
+    cout<<boolalpha<<l<<endl;
+
+    cout<<endl<<"end";
     */
+    
     
     
     return 0;
