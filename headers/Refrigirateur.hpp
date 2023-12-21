@@ -1,7 +1,7 @@
 class Refrigirateur : public Electromenager{
     private :
         float volume;
-        int nombre;
+        //int nombre;
     public:
         Refrigirateur(string nom, string marque, float prixU, float puiss, float volume);
         Refrigirateur(const Refrigirateur &);

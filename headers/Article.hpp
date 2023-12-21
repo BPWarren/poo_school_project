@@ -3,7 +3,7 @@ class Article{
         string nom;
         string marque;
         float prixUnitaire;
-        //int nombre_article;
+        int nombre;
     public:
         //méthode virtuel
         Article(string, string, float);
@@ -14,13 +14,13 @@ class Article{
         string getNom();
         string getMarque();
         float getPrixUnitaire();
-        //int getNombreArticle();
+        int getNombreArticle();
 
         //setters
         void setNom(string);
         void setPrixUnitaire(float);
         void setMarque(string);
-        //void setNombreArticle(int new_nb);
+        void setNombreArticle(int new_nb);
 
         Article & operator=(const Article &);
         void afficher_short();

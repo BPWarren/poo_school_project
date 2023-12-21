@@ -1,7 +1,7 @@
 class Lait : public Alimentaire{
     private:
         bool naturel;
-        int nombre;
+        //int nombre;
     public :
         Lait(string nom, string marque,float prixUnitaire, Date date_exp, bool naturel);
         Lait();

@@ -1,7 +1,7 @@
 class Pain: public Alimentaire{
     private:
         string type;
-        int nombre;
+        //int nombre;
     public:
         Pain(string nom, string marque,float prixUnitaire, Date date_exp, string type);
         Pain();

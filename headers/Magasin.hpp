@@ -3,6 +3,7 @@ class Magasin
 
 private:
     friend class Gerant;
+    friend class Panier;
     Alimentaire** depot1_alimentaire;
     Electromenager** depot2_electromenager;
     Vestimentaire** depot3_vestimentaire;

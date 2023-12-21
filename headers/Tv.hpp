@@ -1,7 +1,7 @@
 class Tv : public Electromenager{
     private:
         float taille; //en pouces
-        int nombre;
+        //int nombre;
     public:
         Tv(string nom, string marque, float prixU, float puiss, float taille);
         Tv();

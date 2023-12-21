@@ -13,6 +13,7 @@ Article::Article(){
     this->nom = "article";
     this->marque = "marque";
     this->prixUnitaire=0;
+    this->nombre = 0;
 }
 
 //Constructeur de copie
@@ -35,15 +36,14 @@ void Article::setPrixUnitaire(float new_prixU){
 void Article::setMarque(string new_marque){
     this->marque = new_marque;
 }
-/*
+
 void Article::setNombreArticle(int new_nb){
-    this->nombre_article = new_nb;
+    this->nombre = new_nb;
 }
 
 int Article::getNombreArticle(){
-    return this->nombre_article;
+    return this->nombre;
 }
-*/
 
 
 string Article::getMarque(){

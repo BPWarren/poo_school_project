@@ -2,7 +2,7 @@ class Chemise: public Vestimentaire
 {
 private:
     bool manche;
-    int nombre;
+    //int nombre;
 public:
     // Consructeurs
     Chemise();

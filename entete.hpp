@@ -21,4 +21,5 @@ using namespace std;
 #include "headers/Person.hpp"
 #include "headers/Client.hpp"
 #include "headers/Gerant.hpp"
+#include "headers/Panier.hpp"
 #endif

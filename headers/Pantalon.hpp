@@ -2,7 +2,7 @@ class Pantalon: public Vestimentaire
 {
 private:
     float longueur;
-    int nombre;
+    //int nombre;
 public:
     // Consructeurs
     Pantalon();

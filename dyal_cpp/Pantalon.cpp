@@ -1,5 +1,4 @@
 #include "../entete.hpp"
-
 Pantalon::Pantalon(){
     this->longueur = 0;
     this->nombre = 0;

@@ -17,7 +17,7 @@ int main(){
     {
     case 1:
         while(true){
-            cout<<"[1] Ajouter un N.article"<<endl;
+            cout<<endl<<"[1] Ajouter un N.article"<<endl;
             cout<<"[2] Article par category"<<endl;
             cout<<"[3] Tous les articles"<<endl;
             cout<<"[4] Supprimer un article"<<endl;
