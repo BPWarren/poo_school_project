@@ -72,11 +72,12 @@ bool Article::operator==(const Article & a){
 }
 
 void Article::afficher_short(){
-    cout<<endl<<"===================";
+    cout<<"===================";
     cout<<endl<<"Nom :";
     cout<<this->nom;
-    cout<<endl<<"PrixU";
-    cout<<endl<<this->prixUnitaire;
+    cout<<endl<<"PrixU :";
+    cout<<this->prixUnitaire;
+    cout<<endl<<"==================="<<endl;
 }
 
 

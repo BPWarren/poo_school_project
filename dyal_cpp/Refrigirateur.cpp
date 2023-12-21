@@ -43,8 +43,8 @@ Refrigirateur& Refrigirateur::operator=(const Refrigirateur &ref){
 
 void Refrigirateur::remplir(){
     Electromenager::remplir();
-    cout<<"Volume : ";
+    cout<<endl<<"Volume : ";
     cin>>this->volume;
-    cout<<"Quantite : ";
+    cout<<endl<<"Quantite : ";
     cin>>this->nombre;
 }

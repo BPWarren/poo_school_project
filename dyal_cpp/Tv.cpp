@@ -44,6 +44,6 @@ void Tv::remplir(){
     Electromenager::remplir();
     cout<<endl<<"Taille : ";
     cin>>this->taille;
-    cout<<"Quantite : ";
+    cout<<endl<<"Quantite : ";
     cin>>this->nombre;
 }

@@ -30,11 +30,11 @@ class Gerant:public Person{
         
         */
        //void afficher_depot(Article *article, int taille);
-       void category_indexation(int index, Magasin);
+       int category_indexation(int index, Magasin, int );
 
        void ajouter_article(Magasin &magasin);
        void afficher_category(Magasin);
        void afficher_tout(Magasin);
-       void supprimer_article(int index, Magasin magasin);
-       void quitter();
+       void supprimer_article(Magasin &magasin);
+       //void quitter();
 };

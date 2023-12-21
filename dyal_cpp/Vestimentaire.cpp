@@ -43,9 +43,9 @@ Vestimentaire& Vestimentaire::operator=(const Vestimentaire& v ){
 
 void Vestimentaire::remplir(){
     Article::remplir();
-    cout<<endl<<"Taille: ";
+    cout<<endl<<"Taille : ";
     cin>>this->taille;
-    cout<<endl<<"Couleur";
+    cout<<endl<<"Couleur : ";
     cin>>this->couleur;
 }
 

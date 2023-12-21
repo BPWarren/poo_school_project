@@ -17,6 +17,7 @@ void Gerant::setMotDePasse(string mot_p){
     this->mot_passe = mot_p;
 }
 
+/*
 void Gerant::add_depot1(Alimentaire *aliment, Magasin magasin){
     *(magasin.depot1_alimentaire + magasin.taille_depot1) = aliment;
     magasin.taille_depot1++;
@@ -66,10 +67,12 @@ void Gerant::pop_depot3(int index, Magasin magasin){
     }
     magasin.taille_depot3--;
 }
+*/
 
 
 void Gerant::ajouter_article(Magasin &magasin){
     int choix=0;
+    cout<<endl<<"========AJOUT ARTICLE========"<<endl;
     cout<<"[1] Pain"<<endl;
     cout<<"[2] Lait"<<endl;
     cout<<"[3] Chemise"<<endl;
@@ -132,52 +135,114 @@ void Gerant::afficher_depot(Article **article, int taille){
     }
 }
 */
-void Gerant::category_indexation(int index, Magasin magasin){
-
+int Gerant::category_indexation(int index, Magasin magasin, int choix=0){
+    int compt=0;
     switch (index)
     {
     //Article **article;
     case 1:
         cout<<"==============Alimentaire============"<<endl;
+        if(magasin.taille_depot1==0){
+            cout<<endl<<"DEPOT VIDE"<<endl;
+        }
         for(int i=0;i<magasin.taille_depot1;i++){
-            cout<<endl<<"REF : "<<"["<<i<<"]";
-            (magasin.depot1_alimentaire[i])->afficher();
+
+            cout<<endl<<"REF : "<<"["<<i<<"]"<<endl;
+            if (choix==0)
+                (magasin.depot1_alimentaire[i])->afficher();
+            else if(choix==1)
+            {
+                (magasin.depot1_alimentaire[i])->afficher_short();
+            }
+            compt++;
         }
         break;
     case 2:
         cout<<"==============Electromenager============"<<endl;
+        if(magasin.taille_depot2==0){
+            cout<<endl<<"DEPOT VIDE"<<endl;
+        }
         for(int i=0;i<magasin.taille_depot2; i++){
-            cout<<endl<<"REF : "<<"["<<i<<"]";
-            (magasin.depot2_electromenager[i])->afficher();
+            cout<<endl<<"REF : "<<"["<<i<<"]"<<endl;
+            if (choix==0)
+                (magasin.depot2_electromenager[i])->afficher();
+            else if(choix==1){
+                (magasin.depot2_electromenager[i])->afficher_short();
+            }
+            compt++;
         }
         break;
     case 3:
         cout<<"==============Vestimentaire============"<<endl;
+        if(magasin.taille_depot3==0){
+            cout<<endl<<"DEPOT VIDE"<<endl;
+        }
         for(int i=0; i<magasin.taille_depot3;i++){
-            cout<<endl<<"REF : "<<"["<<i<<"]";
-            (magasin.depot3_vestimentaire[i])->afficher();
+            cout<<endl<<"REF : "<<"["<<i<<"]"<<endl;
+            if (choix==0)
+                (magasin.depot3_vestimentaire[i])->afficher();
+            else if (choix==1){
+                (magasin.depot3_vestimentaire[i])->afficher_short();
+            }
+            compt++;
         }
         break;
     default:
     cout<<endl<<"Index Incorrect";
         break;
     }
+
+    return compt;
 }
 void Gerant::afficher_category(Magasin magasin){
     int index;
+    cout<<endl<<"========AFFICHAGE DE CATEGORY========"<<endl;
     cout<<endl<<"[1] Alimentaire"<<endl;
     cout<<"[2] Electromenager"<<endl;
     cout<<"[3] Vestimentaire"<<endl;
 
-    cout<<endl<<"=========Choix Categorie : ";
+    cout<<endl<<"Choix Categorie : ";
     cin>>index;
 
     category_indexation(index, magasin);
    
 }
 
-void Gerant::supprimer_article(int index, Magasin magasin){
+void Gerant::supprimer_article(Magasin &magasin){
+    int index, ref_sup=0;
+    cout<<endl<<"========SUPPRESSION ARTC========"<<endl;
+    cout<<endl<<"[1] Alimentaire"<<endl;
+    cout<<"[2] Electromenager"<<endl;
+    cout<<"[3] Vestimentaire"<<endl;
 
+    cout<<endl<<"Art Categorie : ";
+    cin>>index;
+    int compt = category_indexation(index, magasin, 1);
+
+    if (compt)
+    {
+        cout<<endl<<"REF ART SUP : ";
+        cin>>ref_sup;
+    }
+    
+    switch (index)
+    {
+    case 1:
+        magasin.pop_depot1(ref_sup);
+        break;
+    case 2:
+        magasin.pop_depot2(ref_sup);
+        break;
+    case 3:
+        magasin.pop_depot3(ref_sup);
+        break;
+    
+    default:
+        cout<<endl<<"Choix incorrect";
+        break;
+    }
+
+    
 }
 void Gerant::afficher_tout(Magasin magasin){
     category_indexation(1, magasin);
