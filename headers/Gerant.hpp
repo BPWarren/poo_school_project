@@ -10,15 +10,7 @@ class Gerant:public Person{
 
         string getMotDePasse();
         void setMotDePasse(string new_pass);
-
-        void add_depot1(Alimentaire *aliment, Magasin magasin);
-        void pop_depot1(int index, Magasin magasin);
-
-        void add_depot2(Electromenager *electr, Magasin magasino);
-        void pop_depot2(int index, Magasin magasin);
-
-        void add_depot3(Vestimentaire *vest, Magasin magasin);
-        void pop_depot3(int index, Magasin magasin);
+        
         //Methode sup
 
         /*

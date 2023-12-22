@@ -17,57 +17,6 @@ void Gerant::setMotDePasse(string mot_p){
     this->mot_passe = mot_p;
 }
 
-/*
-void Gerant::add_depot1(Alimentaire *aliment, Magasin magasin){
-    *(magasin.depot1_alimentaire + magasin.taille_depot1) = aliment;
-    magasin.taille_depot1++;
-}
-
-void Gerant::add_depot2(Electromenager *elect, Magasin magasin){
-    *(magasin.depot2_electromenager + magasin.taille_depot2) = elect;
-    magasin.taille_depot2++;
-}
-
-void Gerant::add_depot3(Vestimentaire *vest, Magasin magasin){
-    *(magasin.depot3_vestimentaire + magasin.taille_depot3) = vest;
-    magasin.taille_depot3++;
-}
-
-//Pour supprimer, on décale juste le contenu puis on déc taille_depot
-void Gerant::pop_depot1(int index, Magasin magasin){
-    Alimentaire *temp = magasin.depot1_alimentaire[index];
-    temp->afficher();
-
-    for(int i=index; i<magasin.taille_depot1-1;i++){
-        *(magasin.depot1_alimentaire)[i] = *(magasin.depot1_alimentaire)[i+1];
-    }
-
-    magasin.taille_depot1--;
-}
-
-void Gerant::pop_depot2(int index, Magasin magasin){
-
-    //Electromenager *temp = this->depot2_electromenager[index];
-    //temp->afficher();
-
-    for(int i=index; i<magasin.taille_depot2-1;i++){
-        *(magasin.depot2_electromenager)[i] = *(magasin.depot2_electromenager)[i+1];
-    }
-    magasin.taille_depot2--;
-}
-
-
-void Gerant::pop_depot3(int index, Magasin magasin){
-
-    //Vestimentaire *temp = this->depot3_vestimentaire[index];
-    //temp->afficher();
-
-    for(int i=index; i<magasin.taille_depot3-1;i++){
-        *(magasin.depot3_vestimentaire)[i] = *(magasin.depot3_vestimentaire)[i+1];
-    }
-    magasin.taille_depot3--;
-}
-*/
 
 
 void Gerant::ajouter_article(Magasin &magasin){

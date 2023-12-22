@@ -1,3 +1,8 @@
+/*
+G.INFO1
+ABODJI Kondi Kalèd
+BOHM Maxwell
+*/
 class Article{
     protected:
         string nom;

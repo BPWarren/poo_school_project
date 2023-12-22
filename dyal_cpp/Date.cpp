@@ -109,25 +109,3 @@ ostream &operator<<(ostream &flux, Date &date){
     return flux;
 }
 
-/*
-int main(){
-    
-    Date d1;
-    
-    Date d2(23, 04, 2001);
-    Date d3(1,1,2023);
-
-    if (d1==d3){
-        cout << "Les meme date"<<endl;
-    }
-
-    d2.afficher();
-
-    d2.test();
-
-    //Date d9(1,3,-2000);
-    //d9.afficher();
-
-    return 0;
-}
-*/
