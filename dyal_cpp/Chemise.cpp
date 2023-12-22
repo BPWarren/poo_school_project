@@ -38,7 +38,10 @@ void Chemise::setNombre(int new_nb){
 }
 
 void Chemise::afficher(){
-    cout<<boolalpha<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"MANCHE:" <<this->get_manche()<<endl;
+    cout<<boolalpha<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl;
+    cout<<endl<<"Quantite :";
+    cout<<this->nombre<<endl;
+    cout<<"MANCHE:" <<this->get_manche()<<endl;
 
 }
 

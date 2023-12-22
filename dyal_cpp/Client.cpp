@@ -71,7 +71,7 @@ void Client::contenu_panier(){
 
 void Client::facture(){
     cout<<endl<<"========NET A PAYER========"<<endl;
-    cout<<(this->panier).netApayer();
+    cout<<(this->panier).netApayer()<<" DHS";;
 }
 
 void Client::ajouter_article(Magasin &magasin, Gerant &gerant){
@@ -120,7 +120,7 @@ void Client::supprimer_article(){
         cout<<endl<<"=========SUPPRIMER DU PANIER========="<<endl;
         (this->panier).afficher_panier();
         int index=0;
-        cout<<endl<<"REF ART :";
+        cout<<endl<<"=====REF ART A SUP :";
         cin>>index;
         (this->panier).retirer_panier(index);
     }

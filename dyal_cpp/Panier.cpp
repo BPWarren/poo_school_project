@@ -78,7 +78,7 @@ void Panier::ajouter_panier(Article *article, int art_index, int stock_index, in
     //article->setNombreArticle(quantite);
     int nb=0;
     nb = article->getNombreArticle();
-    article->setNombreArticle(nb-1);
+    article->setNombreArticle(nb-quantite);
 
 
     this->tab_article [this->nb_article] = article;
@@ -93,6 +93,7 @@ void Panier::retirer_panier(int index){
     Article *article_sup = (this->tab_article)[index];
     int art_index = (this->article_index)[index];
     int stock_index = (this->stock_index)[index];
+    int quantite = (this->quatite_index[index]);
 
     for(int i=index;i<this->nb_article-1; i++){
         
@@ -102,7 +103,7 @@ void Panier::retirer_panier(int index){
     }
     int nb =0;
     nb = article_sup->getNombreArticle();
-    article_sup->setNombreArticle(nb-1);
+    article_sup->setNombreArticle(nb+quantite);
   
     this->nb_article--;
 
@@ -123,7 +124,7 @@ void Panier::afficher_panier(){
         for(int i=0; i<this->nb_article; i++){
         cout<<endl<<"["<<"REF : "<<i<<"]"<<endl;
         ((this->tab_article)[i])->afficher_short();
-        cout<<endl<<"Quantite : "<<((this->tab_article)[i])->getNombreArticle();
+        cout<<"Quantite : "<<((this->quatite_index)[i])<<endl;
         }
     }
     else{

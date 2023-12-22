@@ -34,7 +34,10 @@ Pantalon& Pantalon::operator=(const Pantalon& p){
 }
 
 void Pantalon::afficher(){
-    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"LONGUEUR:" <<this->get_longueur()<<endl;
+    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl;
+    cout<<endl<<"Quantite :";
+    cout<<this->nombre<<endl;
+    cout<<"LONGUEUR:" <<this->get_longueur()<<endl;
 
 }
 

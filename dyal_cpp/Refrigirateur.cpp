@@ -31,7 +31,11 @@ void Refrigirateur::setNombre(int new_nb){
 }
 
 void Refrigirateur::afficher(){
-cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"Volume : "<<this->volume<<endl;
+cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl;
+cout<<"PrixU : "<<this->getPrixUnitaire()<<endl;
+cout<<endl<<"Quantite :";
+cout<<this->nombre<<endl;
+cout<<"Volume : "<<this->volume<<endl;
 }
 
 Refrigirateur& Refrigirateur::operator=(const Refrigirateur &ref){

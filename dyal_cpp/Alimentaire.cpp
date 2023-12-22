@@ -35,11 +35,11 @@ Alimentaire& Alimentaire::operator=(const Alimentaire & alimentaire){
 void Alimentaire::remplir(){
     Article::remplir();
     int j, m, a;
-    cout<<"Jour exp :";
+    cout<<endl<<"Jour exp :";
     cin>>j;
-    cout<<"Mois exp : ";
+    cout<<endl<<"Mois exp : ";
     cin>>m;
-    cout<<"Annee : ";
+    cout<<endl<<"Annee : ";
     cin>>a;
     (this->date_expiration).setJour(j);
     (this->date_expiration).setMois(m);

@@ -39,7 +39,10 @@ Lait& Lait::operator=(const Lait &lait){
 }
 
 void Lait::afficher(){
-    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"EXP DATE : "<<this->date_expiration<<endl<<"Naturel : ";
+    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl;
+    cout<<endl<<"Quantite :";
+    cout<<this->nombre<<endl;
+    cout<<"EXP DATE : "<<this->date_expiration<<endl<<"Naturel : ";
     if(this->naturel)
         cout<<"Oui"<<endl;
     else{
@@ -52,6 +55,6 @@ void Lait::remplir(){
     Alimentaire::remplir();
     cout<<endl<<"Naturel(0/1) : ";
     cin>>this->naturel;
-    cout<<"Quantite : ";
+    cout<<endl<<"Quantite : ";
     cin>>this->nombre;
 }

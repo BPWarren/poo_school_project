@@ -40,7 +40,10 @@ Pain& Pain::operator=(const Pain& pain){
 }
 
 void Pain::afficher(){
-    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"EXP DATE:" <<this->date_expiration<<endl<<"Type : "<<this->type<<endl;
+    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl;
+    cout<<endl<<"Quantite :";
+    cout<<this->nombre<<endl;
+    cout<<"EXP DATE:" <<this->date_expiration<<endl<<"Type : "<<this->type<<endl;
 
     cout<<endl<<"Nombre : "<<this->nombre<<endl;
 }

@@ -37,7 +37,10 @@ Tv& Tv::operator=(const Tv &tv){
 }
 
 void Tv::afficher(){
-    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl<<"Taille : "<<this->taille<<endl;
+    cout<<"======================"<<endl<<"Nom : " <<this->getNom()<<endl<<"Marque : "<<this->getMarque()<<endl<<"PrixU : "<<this->getPrixUnitaire()<<endl;
+    cout<<endl<<"Quantite :";
+    cout<<this->nombre<<endl;
+    cout<<"Taille : "<<this->taille<<endl;
 }
 
 void Tv::remplir(){
