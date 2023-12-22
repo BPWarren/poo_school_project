@@ -77,29 +77,8 @@ Panier::~Panier(){
 void Panier::ajouter_panier(Article *article, int art_index, int stock_index, int quantite, Magasin &magasin){
     //article->setNombreArticle(quantite);
     int nb=0;
-    switch (stock_index)
-    {
-    case 1:
-        //magasin.taille_depot1--;
-        nb = (magasin.depot1_alimentaire[art_index])->getNombreArticle();
-        (magasin.depot1_alimentaire[art_index])->setNombreArticle(nb-1);
-        
-        break;
-    case 2:
-        //magasin.taille_depot2--;
-        nb = (magasin.depot2_electromenager[art_index])->getNombreArticle();
-        (magasin.depot2_electromenager[art_index])->setNombreArticle(nb-1);
-        break;
-    case 3:
-        //magasin.taille_depot3--;
-        nb = (magasin.depot3_vestimentaire[art_index])->getNombreArticle();
-        (magasin.depot3_vestimentaire[art_index])->setNombreArticle(nb-1);
-        break;
-    
-    default:
-        cout<<endl<<"Choix incorrect";
-        break;
-    }
+    nb = article->getNombreArticle();
+    article->setNombreArticle(nb-1);
 
 
     this->tab_article [this->nb_article] = article;
@@ -110,8 +89,8 @@ void Panier::ajouter_panier(Article *article, int art_index, int stock_index, in
 
 }
 
-void Panier::retirer_panier(int index, Magasin &magasin){
-    //Article *article_sup = (this->tab_article)[index];
+void Panier::retirer_panier(int index){
+    Article *article_sup = (this->tab_article)[index];
     int art_index = (this->article_index)[index];
     int stock_index = (this->stock_index)[index];
 
@@ -122,31 +101,9 @@ void Panier::retirer_panier(int index, Magasin &magasin){
         (this->stock_index)[i] = this->stock_index[i+1];
     }
     int nb =0;
-    switch (stock_index)
-    {
-
-    case 1:
-        //magasin.taille_depot1++;
-        nb = (magasin.depot1_alimentaire[art_index])->getNombreArticle();
-        (magasin.depot1_alimentaire[art_index])->setNombreArticle(nb+1);
-        break;
-    case 2:
-        //magasin.taille_depot2++;
-        nb = (magasin.depot2_electromenager[art_index])->getNombreArticle();
-        (magasin.depot2_electromenager[art_index])->setNombreArticle(nb+1);
-        break;
-    case 3:
-        //magasin.taille_depot3++;
-        nb = (magasin.depot3_vestimentaire[art_index])->getNombreArticle();
-        (magasin.depot3_vestimentaire[art_index])->setNombreArticle(nb+1);
-        break;
-    
-    default:
-        cout<<endl<<"Choix incorrect";
-        break;
-    }
+    nb = article_sup->getNombreArticle();
+    article_sup->setNombreArticle(nb-1);
   
-
     this->nb_article--;
 
 }

@@ -20,7 +20,7 @@ class Panier{
         Panier& operator=(const Panier&);
         void ajouter_panier(Article *article, int art_ind, int sck_i, int quantite, Magasin &);
         
-        void retirer_panier(int index, Magasin &);
+        void retirer_panier(int index);
         void vider_panier();
 
         float netApayer();

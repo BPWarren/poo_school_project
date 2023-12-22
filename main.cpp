@@ -14,12 +14,16 @@ int main(){
         //*pain = Pain();
         pain->setNombreArticle(5);
         pain->setNom("new_in" + to_string (i));
+        pain->setPrixUnitaire(2);
         cout<<endl<<pain->getNombreArticle();
         magasin.add_depot1(pain);
     }
     //client.afficher_category(magasin, gerant);
     client.ajouter_article(magasin, gerant);
-    panier.afficher_panier();
+    client.contenu_panier();
+    client.facture();
+    client.supprimer_article();
+    client.contenu_panier();
 
     
     

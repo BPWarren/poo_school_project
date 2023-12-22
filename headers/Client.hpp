@@ -24,7 +24,7 @@ class Client : public Person{
         void facture();
 
         void ajouter_article(Magasin&, Gerant&);
-        void supprimer_article(Magasin&);
+        void supprimer_article();
         
         
         //void quitter();

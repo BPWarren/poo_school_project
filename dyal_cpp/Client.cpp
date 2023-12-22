@@ -115,14 +115,14 @@ void Client::ajouter_article(Magasin &magasin, Gerant &gerant){
     }
 }
 
-void Client::supprimer_article(Magasin& magasin){
+void Client::supprimer_article(){
     if((this->panier).getNbArticle()>0){
         cout<<endl<<"=========SUPPRIMER DU PANIER========="<<endl;
         (this->panier).afficher_panier();
         int index=0;
         cout<<endl<<"REF ART :";
         cin>>index;
-        (this->panier).retirer_panier(index, magasin);
+        (this->panier).retirer_panier(index);
     }
     else{
         cout<<endl<<"Panier vide"<<endl;
