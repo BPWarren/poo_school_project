@@ -9,34 +9,6 @@ int main(){
     int run = 1;
     int run1 = 1;
     int run2=1;
-    //Panier panier;
-    
-   /*
-   TEST SUPPREME
-
-   for(int i =0; i<2; i++){
-        Alimentaire *pain = new Pain();
-        //*pain = Pain();
-        pain->setNombreArticle(5);
-        pain->setNom("new_in" + to_string (i));
-        pain->setPrixUnitaire(2);
-        cout<<endl<<pain->getNombreArticle();
-        magasin.add_depot1(pain);
-    }
-    //client.afficher_category(magasin, gerant);
-    gerant.ajouter_article(magasin);
-    gerant.afficher_tout(magasin);
-    gerant.supprimer_article(magasin);
-    gerant.afficher_tout(magasin);
-
-    client.ajouter_article(magasin, gerant);
-    client.contenu_panier();
-    client.facture();
-    client.supprimer_article();
-    client.contenu_panier();
-   */
-
-
 
     for(int i =0; i<2; i++){
         Alimentaire *pain = new Pain();
@@ -108,6 +80,7 @@ int main(){
                 }
                 else{
                     cout<<endl<<"PERMISSION DENIED"<<endl;
+                    run1 = 0;
                 }
                 
                 

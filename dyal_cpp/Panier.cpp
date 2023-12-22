@@ -76,17 +76,23 @@ Panier::~Panier(){
 
 void Panier::ajouter_panier(Article *article, int art_index, int stock_index, int quantite, Magasin &magasin){
     //article->setNombreArticle(quantite);
-    int nb=0;
-    nb = article->getNombreArticle();
-    article->setNombreArticle(nb-quantite);
+    if(quantite<article->getNombreArticle()){
+        int nb=0;
+        nb = article->getNombreArticle();
+        article->setNombreArticle(nb-quantite);
 
 
-    this->tab_article [this->nb_article] = article;
-    *((this->article_index)+this->nb_article) =  art_index;
-    *((this->stock_index)+this->nb_article) =  stock_index;
-    this->quatite_index[this->nb_article] = quantite;
-    this->nb_article++;
+        this->tab_article [this->nb_article] = article;
+        *((this->article_index)+this->nb_article) =  art_index;
+        *((this->stock_index)+this->nb_article) =  stock_index;
+        this->quatite_index[this->nb_article] = quantite;
+        this->nb_article++;
 
+    }
+    else{
+        cout<<endl<<"Article en rupture de stock"<<endl;
+    }
+    
 }
 
 void Panier::retirer_panier(int index){
