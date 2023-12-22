@@ -27,7 +27,8 @@ int main(){
     }
 
     while(run){
-        cout<<"START"<<endl;
+        run1=1;
+        run2=1;
         //psw  : LetMeIn@
         int user_choice;
         int exc=0;
