@@ -30,6 +30,7 @@ class Article{
         bool operator==(const Article& a);
 
         virtual void afficher()=0;
+        virtual string class_type()=0;
         virtual void remplir();
 
 };

@@ -50,6 +50,7 @@ Magasin::~Magasin(){
 };
 
 int Magasin::getTailleDepot1(){
+    //cout<<endl<<"ici"<<(this->depot1_alimentaire)[0]->getNombreArticle();
     return this->taille_depot1;
 }
 
@@ -153,4 +154,30 @@ Magasin& Magasin::operator=(const Magasin &magasin){
 
     return *this;
 }
-    
+
+Alimentaire* Magasin::getAliment(int index){
+    if(this->taille_depot1!=0){
+        return (this->depot1_alimentaire)[index];
+    }
+    else{
+        return NULL;
+    }
+}
+
+Electromenager* Magasin::getElectro(int index){
+    if(this->taille_depot2){
+        return (this->depot2_electromenager)[index];
+    }
+    else{
+        return NULL;
+    }
+}
+
+Vestimentaire* Magasin::getVest(int index){
+    if(this->taille_depot3){
+        return (this->depot3_vestimentaire)[index];
+    }
+    else{
+        return NULL;
+    }
+}

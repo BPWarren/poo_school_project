@@ -10,4 +10,5 @@ class Alimentaire : public Article{
         Date getDateExpiration();
         void setDateExpiration(Date new_date);
         Alimentaire & operator=(const Alimentaire &);
+        string class_type() override;
 };

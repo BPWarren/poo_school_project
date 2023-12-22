@@ -135,7 +135,7 @@ void Gerant::afficher_depot(Article **article, int taille){
     }
 }
 */
-int Gerant::category_indexation(int index, Magasin magasin, int choix=0){
+int Gerant::category_indexation(int index, Magasin &magasin, int choix=0){
     int compt=0;
     switch (index)
     {
@@ -194,7 +194,7 @@ int Gerant::category_indexation(int index, Magasin magasin, int choix=0){
 
     return compt;
 }
-void Gerant::afficher_category(Magasin magasin){
+int Gerant::afficher_category(Magasin &magasin){
     int index;
     cout<<endl<<"========AFFICHAGE DE CATEGORY========"<<endl;
     cout<<endl<<"[1] Alimentaire"<<endl;
@@ -205,6 +205,8 @@ void Gerant::afficher_category(Magasin magasin){
     cin>>index;
 
     category_indexation(index, magasin);
+
+    return index;
    
 }
 
@@ -244,7 +246,7 @@ void Gerant::supprimer_article(Magasin &magasin){
 
     
 }
-void Gerant::afficher_tout(Magasin magasin){
+void Gerant::afficher_tout(Magasin &magasin){
     category_indexation(1, magasin);
     category_indexation(2, magasin);
     category_indexation(3, magasin);

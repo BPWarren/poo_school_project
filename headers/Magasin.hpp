@@ -30,6 +30,9 @@ public:
     int getTailleDepot2();
     int getTailleDepot3();
 
+    Alimentaire *getAliment(int index);
+    Electromenager* getElectro(int index);
+    Vestimentaire* getVest(int index);
     //void setTailleDepot1(int new_taille);
     //void setTailleDepot2(int new_taille);
     //void setTailleDepot3(int new_taille);

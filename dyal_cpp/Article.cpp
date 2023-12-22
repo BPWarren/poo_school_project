@@ -21,7 +21,7 @@ Article::Article(const Article &article){
     this->marque = article.marque;
     this->nom = article.nom;
     this->prixUnitaire = article.prixUnitaire;
-    //this->nombre_article = 0;
+    this->nombre = article.nombre;
 }
 
 //Accesseurs
@@ -63,6 +63,7 @@ Article& Article::operator=(const Article &article){
     this->nom = article.nom;
     this->marque = article.marque;
     this->prixUnitaire = article.prixUnitaire;
+    this->nombre= article.nombre;
 
     return *this;
 }

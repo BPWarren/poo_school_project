@@ -19,7 +19,7 @@ using namespace std;
 #include "headers/Refrigirateur.hpp"
 #include "headers/Magasin.hpp"
 #include "headers/Person.hpp"
-#include "headers/Client.hpp"
 #include "headers/Gerant.hpp"
 #include "headers/Panier.hpp"
+#include "headers/Client.hpp"
 #endif

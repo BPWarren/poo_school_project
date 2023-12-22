@@ -49,3 +49,6 @@ void Vestimentaire::remplir(){
     cin>>this->couleur;
 }
 
+string Vestimentaire::class_type(){
+    return "vestimentaire";
+}

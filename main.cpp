@@ -5,9 +5,40 @@ int main(){
     Date date(12,12,2003);
     Magasin magasin;
     Gerant gerant("ABODJI", "K", date);
+    Client client("CL", "zen", date);
+    Panier panier;
+    
+   
+    for(int i =0; i<2; i++){
+        Alimentaire *pain = new Pain();
+        //*pain = Pain();
+        pain->setNombreArticle(5);
+        pain->setNom("new_in" + to_string (i));
+        cout<<endl<<pain->getNombreArticle();
+        magasin.add_depot1(pain);
+    }
+    //client.afficher_category(magasin, gerant);
+    client.ajouter_article(magasin, gerant);
+    panier.afficher_panier();
+
+    
+    
+
+
+
+
+
+
+    /*
+     Alimentaire* pain = new Pain();
+    cout<<pain->getNombreArticle();
+    pain->setNombreArticle(5);
+    cout<<endl<<pain->getNombreArticle();
+
+
+
     int user_choice;
     int exc=0;
-
     cout<<endl<<"===========BIENVENU SUR G.STOCK==========="<<endl;
     cout<<"[1] Gerant"<<endl<<"[2] Client"<<endl;
     cout<<"Vous etes?(1/2) : ";
@@ -55,29 +86,9 @@ int main(){
     default:
         break;
     }
-
-    /*
-    Magasin magasin, magasin1;
-    Pain *pain;
-    pain = new Pain();
-    pain->afficher();
-    magasin.add_depot1(pain);
-    cout<<"here";
-    magasin1 = magasin;
+    
     */
-    cout<<magasin.getTailleDepot1();
-    //Magasin magasin;
-    for(int i=0; i<4;i++){
-        Pain *pain = new Pain();
-        magasin.add_depot1(pain);
-    }
-    gerant.ajouter_article(magasin);
-    cout<<magasin.getTailleDepot1();
-
-    gerant.supprimer_article(magasin);
-    cout<<magasin.getTailleDepot1();
-    gerant.afficher_category(magasin);
-
+    
 
     return 0;
 

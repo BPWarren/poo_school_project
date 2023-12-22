@@ -45,3 +45,7 @@ void Alimentaire::remplir(){
     (this->date_expiration).setMois(m);
     (this->date_expiration).setAnnee(a);
 }
+
+string Alimentaire::class_type(){
+    return "alimentaire";
+}

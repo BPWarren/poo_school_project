@@ -38,3 +38,7 @@ void Electromenager::remplir(){
     cout<<endl<<"Puissance : ";
     cin>>this->puissance;
 }
+
+string Electromenager::class_type(){
+    return "electromenager";
+}

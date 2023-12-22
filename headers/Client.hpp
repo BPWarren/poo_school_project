@@ -1,29 +1,32 @@
 class Client : public Person{
     private:
-        Article** panier;
-
+        Panier panier;
+        //friend class Panier;
     public:
         // Constructeurs
-        Client(string nom , string prenom , Date d , Article**);
+        Client(string nom , string prenom , Date d);
+        Client();
         Client(const Client&);
 
         // Destructeur
         ~Client();
 
-        // Accesseurs
-        Article** get_panier();
-        void set_panier(Article** );
+        
 
         // Operateur d'affectation
         Client& operator=(const Client&);
 
         //Autres methodes
-        void afficher_articles(const Magasin&); 
-        void afficher_tout(const Magasin);
-        void ajouter_article(Article* a);
-        void supprimer_article();
+        void afficher_articles(Magasin&, Gerant&); 
+        void afficher_category(Magasin&, Gerant&);
         void vider_panier();
-        float montant();
-        void quitter();
+        void contenu_panier();
+        void facture();
+
+        void ajouter_article(Magasin&, Gerant&);
+        void supprimer_article(Magasin&);
+        
+        
+        //void quitter();
     
 };
