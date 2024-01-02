@@ -116,9 +116,12 @@ void Panier::retirer_panier(int index){
 }
 
 void Panier::vider_panier(){
-    delete[] this->tab_article;
-    delete[] this->article_index;
-    delete[] this->stock_index;
+    //delete[] this->tab_article;
+    //delete[] this->article_index;
+    //delete[] this->stock_index;
+    for(int i=0; i<this->nb_article; i++){
+        this->retirer_panier(i);
+    }
 
     this->nb_article = 0;
 }
